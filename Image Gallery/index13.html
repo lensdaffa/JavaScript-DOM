@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        body {
+    background-color: #ddd;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbo {
+    width: 100%;
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.thumb {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid transparent;
+    overflow: auto;
+}
+
+.thumb:hover {
+    opacity: 0.5;
+}
+
+/* Class untuk efek transisi */
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.active {
+    opacity: 0.5;
+    border: 2px solid salmon;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="img/Screenshot 2025-11-13 182338.png" alt="jumbo" class="jumbo">
+    
+    <div class="thumbnail">
+        <img src="img/Screenshot 2025-11-13 182534.png" alt="thumb" class="thumb">
+        <img src="img/Screenshot 2025-11-13 182625.png" alt="thumb" class="thumb">
+        <img src="img/Screenshot 2025-11-13 183110.png" alt="thumb" class="thumb">
+        <img src="img/Screenshot 2025-11-20 085231.png" alt="thumb" class="thumb">
+        <img src="img/Screenshot 2025-11-13 183626.png" alt="thumb" class="thumb">
+        <img src="img/Screenshot 2025-11-13 182928.png" alt="thumb" class="thumb">
+    </div>
+</div>
+
+<script src="script13.js"></script>
+</body>
+</html>
